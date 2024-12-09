@@ -1,9 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 
-const SimilarCard = () => {
+const SimilarCard = ({
+  isInterestsCard = false,
+}: {
+  isInterestsCard?: boolean;
+}) => {
   return (
-    <div className='w-[330px] h-[438px] flex flex-col '>
+    <div
+      className={`w-[330px] h-[438px] flex flex-col ${
+        isInterestsCard && 'w-full'
+      }`}
+    >
       <div className='flex items-center justify-center mx-auto  bg-[#FBF9F899] w-full py-16 relative'>
         <div className='flex items-center justify-between absolute top-4 px-[22px] w-full'>
           <Image src='/images/heart.svg' alt='heart' width={32} height={32} />
@@ -16,7 +24,7 @@ const SimilarCard = () => {
           alt='similar-card'
           width={224}
           height={224}
-          className='mix-blend-multiply'
+          className='mix-blend-multiply transition-transform duration-300 ease-in-out hover:scale-105'
         />
       </div>
       <div className='flex flex-col items-center gap-2 p-2 w-full'>
