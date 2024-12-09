@@ -1,4 +1,5 @@
 import ArticlesSimilar from '@/components/ArticlesSimilar';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import InterestsProducts from '@/components/InterestsProducts';
 import NewsLetter from '@/components/NewsLetter';
@@ -15,6 +16,7 @@ export default function Home() {
         <InterestsProducts />
         <Process />
         <NewsLetter />
+        <Footer/>
       </div>
     </main>
   );
