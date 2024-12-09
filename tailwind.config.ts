@@ -16,6 +16,8 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         lora: ['Lora', 'serif'],
+        geist: ['Geist', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       }
     },
   },
