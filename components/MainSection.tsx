@@ -5,8 +5,8 @@ import ProductDesc from './ProductDesc';
 const MainSection = () => {
   return (
     <>
-      <div className='w-full flex gap-6'>
-        <div className='w-1/2 bg-[#F8F6F4] py-10 px-20 rounded-md relative'>
+      <div className='w-full flex gap-6 max-sm:flex-col'>
+        <div className='w-1/2 max-sm:w-full bg-[#F8F6F4] py-10 px-20 rounded-md relative max-sm:px-13 max-sm:py-7'>
           <div className='absolute top-2 left-2 flex gap-2 flex-col'>
             {Array.from({ length: 4 }).map((_, index) => (
               <div key={index} className='p-2 bg-white rounded-lg'>
@@ -15,7 +15,7 @@ const MainSection = () => {
                   alt='table'
                   width={40}
                   height={40}
-                  className={`w-10 h-10 ${index === 0 ? '' : 'opacity-50'}`}
+                  className={`w-10 h-10 ${index === 0 ? '' : 'opacity-50'} max-sm:w-6 max-sm:h-8`}
                 />
               </div>
             ))}
@@ -29,7 +29,7 @@ const MainSection = () => {
             className='mix-blend-multiply'
           />
         </div>
-        <div className='w-1/2 flex flex-col justify-between'>
+        <div className='w-1/2 max-sm:w-full flex flex-col justify-between'>
           <div>
             <div className=' flex items-center justify-between'>
               <h1 className='text-3xl font-playfair text-[#111928]'>
@@ -74,7 +74,7 @@ const MainSection = () => {
             <div className=' h-[0.5px] w-full bg-[#9C9C9C] my-3 opacity-40'>
               {/* Line */}
             </div>
-            <div className='w-[60%] font-geist text-sm  text-[#5D5D5D]'>
+            <div className='w-[60%] font-geist text-sm  text-[#5D5D5D] max-sm:w-full'>
               Location appareil à raclette - Raclette traditionnelle 1/2 roue{' '}
               <br />
               Réglable en hauteur <br /> Appareil à raclette professionnel{' '}
