@@ -18,6 +18,7 @@ export default {
         lora: ['Lora', 'serif'],
         geist: ['Geist', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
       }
     },
   },
