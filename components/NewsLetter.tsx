@@ -14,12 +14,12 @@ const NewsLetter = () => {
         />
         <div className='w-1/2 h-full px-7 py-10 bg-[#FFF3F9] rounded-2xl flex flex-col justify-between gap-5'>
           <h3 className='font-medium text-3xl'>
-            S’inscrire & économiser{' '}
+            S&apos;inscrire & économiser{' '}
             <span className='text-[#5CD2DD] '>10% </span>
           </h3>
           <p className='text-[#BDA2B0] text-sm font-geist'>
             Office ipsum you must be muted. Synergize helicopter prioritize
-            anyway job due harvest most opportunity didn't. Yet busy any meeting
+            anyway job due harvest most opportunity didn&apos;t. Yet busy any meeting
             shark light marginalised 4-blocker message. Productize corporate
             nail caught synergy highlights lunch. Company another pushback items
             dear or any.
@@ -31,7 +31,7 @@ const NewsLetter = () => {
               placeholder='john@doe.com'
             />
             <button className='flex items-center justify-center gap-2 bg-[#5CD2DD] text-white px-5 py-3 rounded-xl'>
-              S’inscrire
+              S&apos;inscrire
               <Image
                 src='/images/arrow-left.svg'
                 alt=''
