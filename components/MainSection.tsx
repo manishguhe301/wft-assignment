@@ -31,8 +31,8 @@ const MainSection = () => {
         </div>
         <div className='w-1/2 max-sm:w-full flex flex-col justify-between'>
           <div>
-            <div className=' flex items-center justify-between'>
-              <h1 className='text-3xl font-playfair text-[#111928]'>
+            <div className=' flex items-center justify-between gap-4'>
+              <h1 className='text-3xl font-playfair text-[#111928] max-sm:text-2xl'>
                 Cheese – appareil à raclette 1/2 roue
               </h1>
               <Image
@@ -43,7 +43,7 @@ const MainSection = () => {
               />
             </div>
             <div className='flex items-center gap-2 my-3'>
-              <p className='font-geist text-2xl text-[#111928]'>39,50€</p>
+              <p className='font-geist text-2xl text-[#111928] max-sm:text-xl'>39,50€</p>
               <span className='text-[#9C9C9C] text-sm'>/pièce</span>
             </div>
             <div className=' h-[0.5px] w-full bg-[#9C9C9C] my-3 opacity-40'>
