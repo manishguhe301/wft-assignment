@@ -1,6 +1,7 @@
 import ArticlesSimilar from '@/components/ArticlesSimilar';
 import Header from '@/components/Header';
 import InterestsProducts from '@/components/InterestsProducts';
+import NewsLetter from '@/components/NewsLetter';
 import Process from '@/components/Process';
 import Product from '@/components/Product';
 
@@ -13,6 +14,7 @@ export default function Home() {
         <ArticlesSimilar />
         <InterestsProducts />
         <Process />
+        <NewsLetter />
       </div>
     </main>
   );
