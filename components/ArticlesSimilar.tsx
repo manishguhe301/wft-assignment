@@ -1,8 +1,11 @@
-import React from 'react';
+'use client';
+import React, { useRef } from 'react';
 import SimilarCard from './SimilarCard';
 import Image from 'next/image';
 
 const ArticlesSimilar = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className='py-8'>
       <div className=' flex items-center justify-between'>
@@ -14,7 +17,15 @@ const ArticlesSimilar = () => {
         </p>
       </div>
       <div className='relative py-5 flex items-center gap-5 max-md:overflow-x-scroll custom-scrollbar'>
-        <div className='bg-[#5CD2DD] p-2 absolute z-10 max-md:hidden'>
+        <div
+          className='bg-[#5CD2DD] p-2 absolute z-10 cursor-pointer '
+          onClick={() =>
+            scrollContainerRef.current?.scrollBy({
+              left: -300,
+              behavior: 'smooth',
+            })
+          }
+        >
           <Image
             src='/images/arrow-right.svg'
             alt='arrow'
@@ -22,13 +33,24 @@ const ArticlesSimilar = () => {
             height={24}
           />
         </div>
-        <div className='flex items-center gap-5 overflow-x-scroll no-scrollbar '>
+        <div
+          className='flex items-center gap-5 overflow-x-scroll no-scrollbar '
+          ref={scrollContainerRef}
+        >
           {Array.from({ length: 5 }).map((_, index) => (
             <SimilarCard key={index} />
           ))}
         </div>
 
-        <div className='bg-[#5CD2DD] p-2 absolute  right-0 z-10 max-md:hidden'>
+        <div
+          className='bg-[#5CD2DD] p-2 absolute  right-0 z-10 cursor-pointer '
+          onClick={() =>
+            scrollContainerRef.current?.scrollBy({
+              left: 300,
+              behavior: 'smooth',
+            })
+          }
+        >
           <Image
             src='/images/arrow-left.svg'
             alt='arrow'
