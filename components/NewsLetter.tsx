@@ -10,6 +10,7 @@ const NewsLetter = () => {
           alt=''
           width={100}
           height={100}
+          loading='lazy'
           className='w-1/2 h-full object-cover rounded-2xl max-md:w-full'
         />
         <div className='w-1/2 h-full px-7 py-10 bg-[#FFF3F9] rounded-2xl flex flex-col justify-between gap-5 max-md:w-full'>
@@ -37,6 +38,7 @@ const NewsLetter = () => {
                 alt=''
                 width={20}
                 height={20}
+                loading='lazy'
               />
             </button>
           </div>

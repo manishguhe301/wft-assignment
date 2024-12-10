@@ -7,7 +7,13 @@ const Header = () => {
     <div>
       <div className='py-7 px-5 flex justify-between w-full'>
         <div className='flex items-start gap-2 w-[54%] max-md:w-fit'>
-          <Image src='/images/logo.webp' alt='' height={65} width={100} />
+          <Image
+            src='/images/logo.webp'
+            alt=''
+            height={65}
+            width={100}
+            loading='lazy'
+          />
           <div className='relative w-full rounded-md max-md:hidden'>
             <input
               type='text'
@@ -20,6 +26,7 @@ const Header = () => {
                 alt=''
                 height={20}
                 width={20}
+                loading='lazy'
               />
             </div>
           </div>
@@ -31,11 +38,18 @@ const Header = () => {
               alt=''
               height={14}
               width={14}
+              loading='lazy'
             />
             <span className='font-medium'>Inspirations</span>
           </div>
           <div className='flex items-center gap-2 text-sm font-poppins max-sm:hidden'>
-            <Image src='/images/heart.svg' alt='' height={14} width={14} />
+            <Image
+              src='/images/heart.svg'
+              alt=''
+              height={14}
+              width={14}
+              loading='lazy'
+            />
             <span className='font-medium'>Mes favoris</span>
             <span className='px-2 py-0 bg-[#CAD2D566] text-[#242D30] rounded-[10px] text-[10px]'>
               24
@@ -47,6 +61,7 @@ const Header = () => {
               alt=''
               height={20}
               width={20}
+              loading='lazy'
             />
             <span>Panier</span>
           </button>
@@ -58,6 +73,7 @@ const Header = () => {
               alt=''
               height={14}
               width={14}
+              loading='lazy'
             />
           </div>
         </div>

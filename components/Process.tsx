@@ -20,7 +20,13 @@ const Process = () => {
       </div>
       <div className=' py-10 flex items-center gap-5 max-sm:flex-col'>
         <div className=' flex flex-col items-center text-center gap-2'>
-          <Image src='/images/bag.svg' alt='' width={50} height={50} />
+          <Image
+            src='/images/bag.svg'
+            alt=''
+            width={50}
+            height={50}
+            loading='lazy'
+          />
           <p className='font-medium text-base text-[#393939]'>
             Livraison & Reprise
           </p>
@@ -30,7 +36,13 @@ const Process = () => {
         </div>
         <div className='h-[1px] w-[100px] bg-[#E5E5E5] max-sm:rotate-90 max-sm:my-10'></div>
         <div className=' flex flex-col items-center gap-2 text-center'>
-          <Image src='/images/dish.svg' alt='' width={50} height={50} />
+          <Image
+            src='/images/dish.svg'
+            alt=''
+            width={50}
+            height={50}
+            loading='lazy'
+          />
           <p className='font-medium text-base text-[#393939]'>Nettoyage</p>
           <p className='text-sm font-normal text-[#9C9C9C]'>
             Selon vos besoins
@@ -38,7 +50,13 @@ const Process = () => {
         </div>
         <div className='h-[1px] w-[100px] bg-[#E5E5E5] max-sm:rotate-90 max-sm:my-10'></div>
         <div className=' flex flex-col items-center gap-2 text-center'>
-          <Image src='/images/web-store.svg' alt='' width={50} height={50} />
+          <Image
+            src='/images/web-store.svg'
+            alt=''
+            width={50}
+            height={50}
+            loading='lazy'
+          />
           <p className='font-medium text-base text-[#393939]'>
             Commande Illimitée
           </p>
@@ -48,7 +66,13 @@ const Process = () => {
         </div>
         <div className='h-[1px] w-[100px] bg-[#E5E5E5] max-sm:rotate-90 max-sm:my-10  '></div>
         <div className=' flex flex-col items-center gap-2 text-center'>
-          <Image src='/images/car.svg' alt='' width={50} height={50} />
+          <Image
+            src='/images/car.svg'
+            alt=''
+            width={50}
+            height={50}
+            loading='lazy'
+          />
           <p className='font-medium text-base text-[#393939]'>
             Transport & Enlèvement
           </p>

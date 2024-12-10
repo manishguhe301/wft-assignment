@@ -31,6 +31,7 @@ const ArticlesSimilar = () => {
             alt='arrow'
             width={24}
             height={24}
+            loading='lazy'
           />
         </div>
         <div
@@ -56,6 +57,7 @@ const ArticlesSimilar = () => {
             alt='arrow'
             width={24}
             height={24}
+            loading='lazy'
           />
         </div>
       </div>

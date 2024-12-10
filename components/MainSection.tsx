@@ -15,7 +15,10 @@ const MainSection = () => {
                   alt='table'
                   width={40}
                   height={40}
-                  className={`w-10 h-10 ${index === 0 ? '' : 'opacity-50'} max-sm:w-6 max-sm:h-8`}
+                  loading='lazy'
+                  className={`w-10 h-10 ${
+                    index === 0 ? '' : 'opacity-50'
+                  } max-sm:w-6 max-sm:h-8`}
                 />
               </div>
             ))}
@@ -26,6 +29,7 @@ const MainSection = () => {
             width={600}
             height={400}
             layout='responsive'
+            loading='lazy'
             className='mix-blend-multiply'
           />
         </div>
@@ -39,11 +43,14 @@ const MainSection = () => {
                 src='/images/heart.svg'
                 alt='heart'
                 width={30}
+                loading='lazy'
                 height={30}
               />
             </div>
             <div className='flex items-center gap-2 my-3'>
-              <p className='font-geist text-2xl text-[#111928] max-sm:text-xl'>39,50€</p>
+              <p className='font-geist text-2xl text-[#111928] max-sm:text-xl'>
+                39,50€
+              </p>
               <span className='text-[#9C9C9C] text-sm'>/pièce</span>
             </div>
             <div className=' h-[0.5px] w-full bg-[#9C9C9C] my-3 opacity-40'>
@@ -57,13 +64,20 @@ const MainSection = () => {
                     alt=''
                     width={24}
                     height={24}
+                    loading='lazy'
                   />
                   <span>
                     20<sup>cm</sup>
                   </span>
                 </div>
                 <div className='flex items-center gap-2'>
-                  <Image src='/images/res.svg' alt='' width={24} height={24} />
+                  <Image
+                    src='/images/res.svg'
+                    alt=''
+                    width={24}
+                    height={24}
+                    loading='lazy'
+                  />
                   <span>
                     50<sup>cm</sup>
                   </span>

@@ -22,12 +22,28 @@ const ProductDesc = () => {
       </div>
       <div className='w-1/2 max-md:w-full bg-[#FBF9F899]'>
         <div className='py-[18px] w-full px-5 flex items-center justify-between'>
-          <p className='font-medium text-[#393939] text-base text-opacity-75'>Livraisons</p>
-          <Image src='/images/plus.svg' alt='' width={20} height={20} />
+          <p className='font-medium text-[#393939] text-base text-opacity-75'>
+            Livraisons
+          </p>
+          <Image
+            src='/images/plus.svg'
+            alt=''
+            width={20}
+            height={20}
+            loading='lazy'
+          />
         </div>
         <div className='py-[18px] w-full px-5 flex items-center justify-between'>
-          <p className='font-medium text-[#393939] text-base text-opacity-75'>Questions</p>
-          <Image src='/images/plus.svg' alt='' width={20} height={20} />
+          <p className='font-medium text-[#393939] text-base text-opacity-75'>
+            Questions
+          </p>
+          <Image
+            src='/images/plus.svg'
+            alt=''
+            width={20}
+            height={20}
+            loading='lazy'
+          />
         </div>
       </div>
     </div>

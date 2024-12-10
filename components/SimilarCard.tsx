@@ -14,7 +14,13 @@ const SimilarCard = ({
     >
       <div className='flex items-center justify-center mx-auto  bg-[#FBF9F899] w-full py-16 relative'>
         <div className='flex items-center justify-between absolute top-4 px-[22px] w-full'>
-          <Image src='/images/heart.svg' alt='heart' width={32} height={32} />
+          <Image
+            src='/images/heart.svg'
+            alt='heart'
+            width={32}
+            height={32}
+            loading='lazy'
+          />
           <span className='px-2 py-1 text-[#111928] text-[10px] bg-[#fff]'>
             Art de la table
           </span>
@@ -24,6 +30,7 @@ const SimilarCard = ({
           alt='similar-card'
           width={224}
           height={224}
+          loading='lazy'
           className='mix-blend-multiply transition-transform duration-300 ease-in-out hover:scale-105'
         />
         <div className='p-2 absolute bottom-4 bg-[#fff] left-4 right-4 flex items-center gap-2  opacity-0 group-hover:opacity-100 transition-opacity duration-300'>

@@ -6,7 +6,13 @@ const Footer = () => {
     <>
       <div className='py-10 flex  justify-between max-md:flex-col max-md:gap-10 max-md:items-center max-sm:items-start'>
         <div className='flex items-center gap-10 max-md:flex-col'>
-          <Image src='/images/logo.webp' alt='logo' width={100} height={65} />
+          <Image
+            src='/images/logo.webp'
+            alt='logo'
+            width={100}
+            height={65}
+            loading='lazy'
+          />
           <div className='flex items-center gap-16 max-sm:flex-wrap max-sm:gap-5'>
             <div className=' flex flex-col gap-2'>
               <h6 className='text-[#393939] font-bold text-[18px]'>
@@ -69,6 +75,7 @@ const Footer = () => {
                 width={22}
                 height={22}
                 className=''
+                loading='lazy'
               />
             </div>
 
@@ -79,6 +86,7 @@ const Footer = () => {
                 width={22}
                 height={22}
                 className=''
+                loading='lazy'
               />
             </div>
             <div className='border-[0.5px] border-[#39393959] p-2 rounded-md'>
@@ -88,6 +96,7 @@ const Footer = () => {
                 width={22}
                 height={22}
                 className=''
+                loading='lazy'
               />
             </div>
           </div>
