@@ -19,7 +19,13 @@ export default {
         geist: ['Geist', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
-      }
+      },
+      screens: {
+        'xs': '480px',
+        'md': '769px',
+        'lg': '1025px',
+        'xl': '1280px',
+      },
     },
   },
   plugins: [],

@@ -21,7 +21,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className='flex items-center gap-8 pb-4 max-lg:overflow-x-scroll no-scrollbar mb-0 px-5'>
+      <div className='flex items-center gap-8 pb-4 max-lg:overflow-x-scroll no-scrollbar mb-0 px-5 xl:overflow-hidden'>
         {sliderItems.map((item, index) => (
           <div
             key={index}
