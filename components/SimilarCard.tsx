@@ -8,8 +8,8 @@ const SimilarCard = ({
 }) => {
   return (
     <div
-      className={`w-[330px] h-[438px] flex flex-col ${
-        isInterestsCard && 'w-full'
+      className={`h-[438px] flex-shrink-0 flex flex-col ${
+        isInterestsCard ? 'w-full' : 'w-[330px]'
       }`}
     >
       <div className='flex items-center justify-center mx-auto  bg-[#FBF9F899] w-full py-16 relative'>

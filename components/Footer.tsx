@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col items-end gap-3'>
+        <div className='flex flex-col items-end gap-3 max-sm:items-start'>
           <p className='font-bold text-[18px] text-[#393939]'>NOUS SUIVRE</p>
           <div className='flex items-center gap-2'>
             <div className='border-[0.5px] border-[#39393959] p-2 rounded-md'>
